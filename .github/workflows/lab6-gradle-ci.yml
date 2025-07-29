@@ -47,6 +47,6 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: build/libs/*.jar
-        tag: ${{ github.ref_name }}  # Uses the pushed tag like v1.0.0
+        tag: ${{ github.ref_name }}
         name: Release ${{ github.ref_name }}
         body: "Java build artifact released automatically."
